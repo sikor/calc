@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Retirement calculator</title>
+</head>
+<body>
+
+<form>
+    <h1>Retirement calculator</h1>
+    <p>Calculate how many years you need to save enough money to stop working</p>
+    <section>
+        <h2>Living cost</h2>
+        <p>
+            <label for="age">Age</label>
+            <input type="number" id="age" value="28"/>
+        </p>
+        <p>
+            <label for="livingcost">Living cost</label>
+            <input type="number" id="livingcost" value="2000"/>
+        </p>
+        <p>
+            <label for="inflation">Yearly inflation</label>
+            <input type="number" id="inflation" value="3"/>%
+        </p>
+    </section>
+    <section>
+        <h2>Passive investments</h2>
+        <p>
+            <label for="currentmoney">Current money</label>
+            <input type="number" id="currentmoney" value="10000"/>
+        </p>
+        <p>
+            <label for="investments">Yearly investement</label>
+            <input type="number" id="investments" value="2"/>%
+        </p>
+    </section>
+    <section>
+        <h2>Income</h2>
+        <p>
+            <label for="income">Income</label>
+            <input type="number" id="income" value="4000"/>
+        </p>
+        <p>
+            <label for="increase">Yearly increase</label>
+            <input type="number" id="increase" value="5"/>%
+        </p>
+    </section>
+    <section>
+        <p>
+            <button id="calculate" type="button">Calculate working years</button>
+        </p>
+    </section>
+</form>
+<p id="result">
+</p>
+<div id="charts">
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.js"></script>
+<script type="text/javascript" src="calc.js"></script>
+</body>
+</html>
