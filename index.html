@@ -14,13 +14,15 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-144250801-1');
+
     </script>
 </head>
 <body>
 
 <form>
     <h1>Kalkulator oszczędności</h1>
-    <p>Oblicz ile lat jeszcze musisz pracować aby zaoszczędzić wystarczająco dużo pieniędzy aby żyć z samych inwestycji.</p>
+    <p>Oblicz ile lat jeszcze musisz pracować aby zaoszczędzić wystarczająco dużo pieniędzy aby żyć z samych
+        inwestycji.</p>
     <section>
         <h2>Koszty życia</h2>
         <p>
@@ -56,6 +58,10 @@
         <p>
             <label for="increase">Oczekiwana coroczna podwyżka</label>
             <input type="number" id="increase" value="5"/>%
+        </p>
+        <p>
+            <label for="maxIncome">Maksymalna wypłata miesięczna (na rękę), od tej kwoty podwyżka będzie równa inflacji</label>
+            <input type="number" id="maxIncome" value="8000"/>
         </p>
     </section>
     <section>
