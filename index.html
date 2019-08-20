@@ -15,6 +15,10 @@
   gtag('js', new Date());
   gtag('config', 'UA-144250801-1');
 
+
+
+
+
     </script>
 </head>
 <body>
@@ -60,11 +64,16 @@
             <input type="number" id="increase" value="5"/>%
         </p>
         <p>
-            <label for="maxIncome">Maksymalna wypłata miesięczna (na rękę), od tej kwoty podwyżka będzie równa inflacji</label>
+            <label for="maxIncome">Maksymalna wypłata miesięczna (na rękę), od tej kwoty podwyżka będzie równa
+                inflacji</label>
             <input type="number" id="maxIncome" value="8000"/>
         </p>
     </section>
     <section>
+        <p>
+            <label for="rememberValues">Pamiętaj wpisane wartości</label>
+            <input id="rememberValues" type="checkbox" checked/>
+        </p>
         <p>
             <button id="calculate" type="button">Oblicz lata pracy</button>
         </p>
