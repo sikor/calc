@@ -3,3 +3,13 @@
     height: 200px;
     float: left;
 }
+
+.yearsSeparator{
+    width: 50%;
+    height: 3em;
+    border-right: 2px solid black;
+}
+
+.yearsRow td {
+    height: 3em;
+}
