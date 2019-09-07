@@ -6,86 +6,20 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Kalkulator oszczędności</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144250801-1"></script>
-    <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-144250801-1');
-
-
-
-
-
-    </script>
 </head>
-<body>
-
-<form>
-    <h1>Kalkulator oszczędności</h1>
-    <p>Oblicz ile lat jeszcze musisz pracować aby zaoszczędzić wystarczająco dużo pieniędzy aby żyć z samych
-        inwestycji.</p>
-    <section>
-        <h2>Koszty życia</h2>
-        <p>
-            <label for="age">Wiek</label>
-            <input type="number" id="age" value="28"/>
-        </p>
-        <p id="livingcostParagraph">
-            <label for="livingcost">Miesięczne wydatki</label>
-            <input type="number" id="livingcost" value="2000"/>
-        </p>
-        <p id="inflationParagraph">
-            <label for="inflation">Roczna inflacja</label>
-            <input type="number" id="inflation" value="3"/>%
-        </p>
-    </section>
-    <section>
-        <h2>Przychód z inwestycji</h2>
-        <p id="currentmoneyParagraph">
-            <label for="currentmoney">Obecne oszczędności</label>
-            <input type="number" id="currentmoney" value="10000"/>
-        </p>
-        <p id="investmentsParagraph">
-            <label for="investments">Roczny procent zysku z inwestycji (po opodatkowaniu)</label>
-            <input type="number" id="investments" value="2"/>%
-        </p>
-    </section>
-    <section>
-        <h2>Przychód z pracy</h2>
-        <p id="incomeParagraph">
-            <label for="income">Wypłata miesięczna (na rękę)</label>
-            <input type="number" id="income" value="4000"/>
-        </p>
-        <p id="increaseParagraph">
-            <label for="increase">Coroczna podwyżka wypłaty</label>
-            <input type="number" id="increase" value="5"/>%
-        </p>
-        <p id="maxIncomeParagraph">
-            <label for="maxIncome">Maksymalna osiągalna wypłata</label>
-            <input type="number" id="maxIncome" value="8000"/>
-        </p>
-    </section>
-    <section>
-        <p>
-            <label for="rememberValues">Pamiętaj wpisane wartości</label>
-            <input id="rememberValues" type="checkbox" checked/>
-        </p>
-        <p>
-            <button id="calculate" type="button">Oblicz lata pracy</button>
-        </p>
-    </section>
-</form>
-<p id="result">
-</p>
-<div id="charts">
-</div>
+<body id="body">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
 <script type="text/javascript" src="calc.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144250801-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-144250801-1');
+</script>
 </body>
 </html>
