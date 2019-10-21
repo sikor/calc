@@ -10,6 +10,20 @@
     border-right: 2px solid black;
 }
 
-.yearsRow td {
-    height: 3em;
+.yearsValue {
+    text-align: center;
+    width: 2em;
+}
+
+.leftBoundValue{
+    width: 5em;
+    text-align: center;
+}
+
+.inputCell {
+    width: 15em;
+}
+
+.formParagraph {
+    margin-bottom: 30px;
 }
