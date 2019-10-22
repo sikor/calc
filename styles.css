@@ -1,3 +1,8 @@
+#centerer {
+    width: 1000px;
+    margin: auto;
+}
+
 .chartContainer{
     width: 400px;
     height: 200px;
@@ -21,9 +26,13 @@
 }
 
 .inputCell {
-    width: 15em;
+    width: 30em;
 }
 
 .formParagraph {
     margin-bottom: 30px;
+}
+
+.formInput {
+    width: 7em;
 }
