@@ -1,38 +1,155 @@
-#centerer {
-    width: 1000px;
+html{
+    font-family: Arial;
+    color: black;
+}
+
+header {
+    padding: 2rem 0 2rem 0;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+}
+
+header h3 {
+    margin: 0;
+    font-size:1.2rem;
+    color: #828282;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+header i {
+  line-height: 1.5;
+  font-size:1.2rem;
+}
+
+.centerer {
+    width: 62rem;
     margin: auto;
 }
 
-.chartContainer{
+main {
+    font-size: 1.2rem;
+}
+
+main h3 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+main h4 {
+    font-size: 1.33rem;
+    font-weight: normal;
+    margin:1rem auto 1rem auto;
+    text-align: center;
+}
+
+main p {
+    margin: 0;
+}
+
+main p + p {
+    text-indent: 1.5em;
+}
+
+form div {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+form label {
+    width: 12rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+form input, form button {
+    width: 15rem;
+    height: 2.4rem;
+    margin-left: auto;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border: 1px solid #9D9D9D;
+}
+
+form button {
+    background-color: #E1E1E1;
+    color: black;
+}
+
+form input {
+    padding-left: 0.125rem;
+}
+
+form input[type='checkbox']{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+form p {
+    font-size: small;
+    display: inline-block;
+    padding-left:1rem;
+    width: 33rem;
+    vertical-align: middle;
+}
+
+div.result-comparison {
+    overflow-x: scroll;
+    margin: 2rem 0 2rem 17rem;
+}
+
+div.result-comparison th:first-child {
+    position: absolute;
+    width: 17rem;
+    margin-left: -17rem;
+    text-align: left;
+    padding: 0;
+}
+
+div.result-comparison th.result-comparison-check-title span{
+    font-size: small;
+    font-weight: normal;
+    white-space: normal;
+    display: inline-block;
+    width: 5rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+div.result-comparison th input[type='checkbox'] {
+    width: 1.2rem;
+    text-align: left;
+    height: 1.2rem;
+    vertical-align: middle;
+    margin: 0 1.9rem;
+}
+
+div.result-comparison td, div.result-comparison th {
+    width: 10rem;
+    text-align: center;
+    white-space: nowrap;
+    height: 3rem;
+    font-weight: normal;
+    line-height: 3rem;
+    padding: 0 2rem;
+}
+
+div.result-comparison td.select-param-placeholder {
+    white-space: normal;
+    line-height: 1.2;
+    background-color: #E1E1E1;
+}
+
+.chartContainer {
     width: 400px;
     height: 200px;
     float: left;
-}
-
-.yearsSeparator{
-    width: 50%;
-    height: 3em;
-    border-right: 2px solid black;
-}
-
-.yearsValue {
-    text-align: center;
-    width: 2em;
-}
-
-.leftBoundValue{
-    width: 5em;
-    text-align: center;
-}
-
-.inputCell {
-    width: 30em;
-}
-
-.formParagraph {
-    margin-bottom: 30px;
-}
-
-.formInput {
-    width: 7em;
 }
