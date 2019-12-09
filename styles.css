@@ -133,7 +133,7 @@ div.result-comparison th input[type='checkbox'] {
 }
 
 div.result-comparison td, div.result-comparison th {
-    width: 10rem;
+    width: 11rem;
     text-align: center;
     white-space: nowrap;
     height: 3rem;
@@ -146,6 +146,16 @@ div.result-comparison td.select-param-placeholder {
     white-space: normal;
     line-height: 1.2;
     background-color: #E1E1E1;
+}
+
+div.result-comparison td.select-param-placeholder span {
+    width: 11rem;
+    display: inline-block;
+}
+
+div.result-comparison #resultYears span {
+    width: 11rem;
+    display: inline-block;
 }
 
 .chartContainer {
